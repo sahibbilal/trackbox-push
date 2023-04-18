@@ -109,12 +109,12 @@ class Trackbox_Push_Admin {
         ?>
         <script>
             jQuery(document).ready(function($) {
-                $('.e-form__buttons button[type="submit"]').click(function(e) {
+                $('.tp_submit_btn').click(function(e) {
                     e.preventDefault();
-                    var firstName = $('input[name="form_fields[name]"]').val();
-                    var lastName = $('input[name="form_fields[field_d31363f]"]').val();
-                    var email = $('input[name="form_fields[email]"]').val();
-                    var phone = $('input[name="form_fields[field_6370969]"]').val();
+                    var firstName = $('.tp_fname').val();
+                    var lastName = $('.tp_lname').val();
+                    var email = $('.tp_email').val();
+                    var phone = $('.tp_phone').val();
                     var _url = document.URL;
                     var url = new URL(_url);
                     var _ai = url.searchParams.get("ai");
@@ -134,7 +134,7 @@ class Trackbox_Push_Admin {
                         success: function(res) {
                             var response = JSON.parse(res);
                             if (response.status === false) {
-                                $(".elementor-field-group-field_ac35539").empty().append(response.data);
+                                $(".tp_api_response").empty().append(response.data);
                             } else {
                                 window.location.reload();
                             }

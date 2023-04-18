@@ -2,7 +2,6 @@
 
 function max_fields_design(){
     $options = get_option( 'track_box_push_options' );
-//    update_option( 'track_box_push_options', '');
     add_settings_field(
         'track_box_push_apiKey',
         __( 'API Key', 'track_box_push' ),
