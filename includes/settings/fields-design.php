@@ -46,7 +46,7 @@ function max_fields_design(){
 function track_box_push_track_box_push_apiKey( $args ) {
     $options = get_option( 'track_box_push_options' );
     ?>
-    <input type="text" id="<?php echo esc_attr( $args['label_for'] ); ?>"
+    <input type="text" id="<?php echo esc_attr( $args['label_for'] ); ?>" style="width: 50%;"
            name="track_box_push_options[<?php echo esc_attr( $args['label_for'] ); ?>]"
            data-custom="<?php echo esc_attr( $args['track_box_push_custom_data'] ); ?>"
            value="<?php echo isset($options[$args['label_for']]) ? esc_attr($options[$args['label_for']]) : ''; ?>" required />

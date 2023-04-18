@@ -36,13 +36,13 @@
 			'<label for="track_box_push_apiKey">Account Details '+_len+'</label>' +
 			'</th>' +
 			'<td>' +
-			'<input style="margin-bottom: 10px" type="text" name="track_box_push_options[custom]['+_len+'][username]" data-custom="custom" placeholder="Username" required=><br />' +
-			'<input style="margin-bottom: 10px" type="text" name="track_box_push_options[custom]['+_len+'][password]" data-custom="custom" placeholder="Password" required=><br />' +
-			'<input style="margin-bottom: 10px" type="text" name="track_box_push_options[custom]['+_len+'][weblink]" data-custom="custom" placeholder="Web Link" required=><br />' +
-			'<input style="margin-bottom: 10px" type="text" name="track_box_push_options[custom]['+_len+'][ai]" data-custom="custom" placeholder="AI" required=><br />' +
-			'<input style="margin-bottom: 10px" type="text" name="track_box_push_options[custom]['+_len+'][ci]" data-custom="custom" placeholder="CI" required=><br />' +
-			'<input style="margin-bottom: 10px" type="text" name="track_box_push_options[custom]['+_len+'][gi]" data-custom="custom" placeholder="GI" required=><br />' +
-			'<textarea style="width: 177px;" name="track_box_push_options[custom]['+_len+'][mpc][]" data-custom="custom" placeholder="Mpc_1=abc,Mpc_2=test" required=>MPC_1 = FreeParam, MPC_2 = FreeParam, MPC_3 = FreeParam, MPC_4 = FreeParam, MPC_5 = FreeParam, MPC_6 = FreeParam, MPC_7 = FreeParam, MPC_8 = FreeParam, MPC_9 = FreeParam, MPC_10 = FreeParam</textarea>' +
+			'<input style="margin-bottom: 10px; width: 50%" type="text" name="track_box_push_options[custom]['+_len+'][username]" data-custom="custom" placeholder="Username" required=><br />' +
+			'<input style="margin-bottom: 10px; width: 50%" type="text" name="track_box_push_options[custom]['+_len+'][password]" data-custom="custom" placeholder="Password" required=><br />' +
+			'<input style="margin-bottom: 10px; width: 50%" type="text" name="track_box_push_options[custom]['+_len+'][weblink]" data-custom="custom" placeholder="Web Link" required=><br />' +
+			'<input style="margin-bottom: 10px; width: 50%" type="text" name="track_box_push_options[custom]['+_len+'][ai]" data-custom="custom" placeholder="AI" required=><br />' +
+			'<input style="margin-bottom: 10px; width: 50%" type="text" name="track_box_push_options[custom]['+_len+'][ci]" data-custom="custom" placeholder="CI" required=><br />' +
+			'<input style="margin-bottom: 10px; width: 50%" type="text" name="track_box_push_options[custom]['+_len+'][gi]" data-custom="custom" placeholder="GI" required=><br />' +
+			'<textarea style="width: 177px; width: 50%" name="track_box_push_options[custom]['+_len+'][mpc][]" data-custom="custom" placeholder="Mpc_1=abc,Mpc_2=test" required=>MPC_1 = FreeParam, MPC_2 = FreeParam, MPC_3 = FreeParam, MPC_4 = FreeParam, MPC_5 = FreeParam, MPC_6 = FreeParam, MPC_7 = FreeParam, MPC_8 = FreeParam, MPC_9 = FreeParam, MPC_10 = FreeParam</textarea> <span class="description"><br />Enter multiple values separated by commas (e.g. value1, value2, value3)</span>' +
 			'</td></tr>';
 		var ajax = $(this).attr('data-ajax');
 		var apnd = $(this).closest('tr');
